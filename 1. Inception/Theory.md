@@ -19,11 +19,11 @@
 
 # 8. What are async and defer?
 ### async  and defer boolean attributes are used with script tag  to load external scripts efficiently into our web page.
-#### <script src=”index.js”/>  while loading and executing the script the HTML parsing is paused. In this way js is blocking the  HTML.
+### <script src=”index.js”/>  while loading and executing the script the HTML parsing is paused. In this way js is blocking the  HTML.
 
-#### <script async src=”index.js”/> HTML parsing is paused only for the period of execution and not loading the script. Script is loaded in async manner
+### <script async src=”index.js”/> HTML parsing is paused only for the period of execution and not loading the script. Script is loaded in async manner
 
-#### <script defer src=”index.js”/> Script loading is done along with HTML parsing and executed only after the HTML is parsed.
+### <script defer src=”index.js”/> Script loading is done along with HTML parsing and executed only after the HTML is parsed.
 
 
 
