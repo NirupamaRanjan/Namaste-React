@@ -20,16 +20,22 @@ const Title=()=>(
     </h1>
 )
 
+//Fragment: Acts like the empty HTML tag which prevents div soup.
 const HeadingComponent=()=>(
-    <div className="heading">
-       {titleElement}
-       {/* we can call the component as a simple function also */}
-       {Title()}
-       <Title/>
-       <Title></Title>
-       <h2>This is heading component</h2>    
-    </div>
-)
+    <>
+        <div className="heading">
+           {titleElement}
+           {/* we can call the component as a simple function also */}
+           {Title()}
+           <Title/>
+           <Title></Title>
+           <h2>This is heading component</h2>    
+        </div>
+        <div className="Content">
+            <h3>This is our content</h3>
+        </div>
+     </>
+    )
 
 const rootElement=ReactDOM.createRoot(root);
 rootElement.render(<HeadingComponent/>)
